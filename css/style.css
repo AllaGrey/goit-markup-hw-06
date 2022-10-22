@@ -702,6 +702,7 @@ color: rgba(255, 255, 255, 0.6);
     transition-timing-function: var(--cubic);
 }
 
+.btn-close:hover .icon-close-modal,
 .btn-close:focus .icon-close-modal {
     fill: var(--brand-color);
 
@@ -762,13 +763,18 @@ color: rgba(255, 255, 255, 0.6);
     color: var(--text-color);
     font-size: 12px;
     line-height: 1.17;
+    /* position: relative; */
+}
+
+.modal-box {
     position: relative;
 }
 
 .modal-icon {
-position: absolute;
-bottom: 0%;
-left: 11px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
 }
 
 .modal-input:focus + .modal-icon {
@@ -790,6 +796,7 @@ left: 11px;
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--text-color);
 } 
 
